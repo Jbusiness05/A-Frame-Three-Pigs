@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Da Crib</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+
+<body>
+
+    <a-scene background="color:#87CEEB">
+
+        <a-assets>
+            <img id="Hay roof" src="Assets/Hay roof.jpeg">
+            <img id="Sticks" src="Assets/Sticks.jpeg">
+            <img id="bricks" src="Assets/Brick.jpeg">
+            <img id="Stone" src="Assets/Stone.jpeg">
+            <img id="hay" src="Assets/hay.jpeg">
+            <img id="Window" src="Assets/Window.jpeg">
+            <img id="Stick Roof" src="Assets/Stick Roof.jpeg">
+            <a-asset-item id="Piggy" src="Assets/minecraft_-_pig/scene.gltf"></a-asset-item>
+            <a-asset-item id="Wolf" src="Assets/wolf_dog_minecraft/scene.gltf"></a-asset-item>
+            <a-asset-item id="Block" src="Assets/minecraft_grass_block/scene.gltf"></a-asset-item>
+            <a-asset-item id="House" src="Assets/brick-house/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity position="10 0 -8">
+            <a-scene>
+                <!-- Piggy -->
+                <a-entity gltf-model="#Piggy" scale="0.1 0.1 0.1" position="0 0 -3"></a-entity>
+                <!-- Piggy -->
+                <a-entity gltf-model="#Piggy" scale="0.1 0.1 0.1" position="8 0 -3"></a-entity>
+                <!-- Piggy -->
+                <a-entity gltf-model="#Piggy" scale="0.1 0.1 0.1" position="-7 0 -3"></a-entity>
+               
+                <!-- Wolf -->
+                <a-entity gltf-model="#Wolf" scale=".6 .6 .6" position="0 0 3" rotation="0 180 0"></a-entity>
+                <!-- Block -->
+                <a-entity gltf-model="#Block" position="0 -34.8 -11" scale="28 17 28" rotation="0 180 0"></a-entity>
+                <!-- Block -->
+                <a-entity gltf-model="#House" position="-15 -3.29 -35" scale="20 20 20" rotation="0 180 0"></a-entity>
+
+            </a-scene>
+            <!-- Front House -->
+        <a-entity 
+            position="4 0 -4">
+        
+            <!-- Top of Front Boz -->
+             <a-box
+                color="grey"
+                width="4"
+                height="2"
+                depth=".5"
+                position="-2.640 2.439 -0.450"
+                side="double"
+                rotation="0 0 0"
+                scale="1.374 1 1"
+                src="Assets/Sticks.jpeg">
+            </a-box>
+            <!-- Right of front box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="2"
+                depth=".5"
+                position="-1.094 1.452 -0.450"
+                side="double"
+                rotation="0 0 0"
+                scale="0.596 1.8 1"
+                src="Assets/Sticks.jpeg">
+            </a-box>
+            <!-- Left of front box -->
+            <a-box
+            color="grey"
+            width="4"
+            height="2"
+            depth=".5"
+            position="-4.539 1.374 -0.450"
+            side="double"
+            rotation="0 0 0"
+            scale="0.422 1.8 1"
+            src="Assets/Sticks.jpeg">
+        </a-box>
+            <!-- Left Box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-5.098 1.452 -2.708"
+                side="double"
+                rotation="0 89.818 0"
+                src="Assets/Sticks.jpeg">
+                
+            </a-box>
+            <!-- Back Box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-2.620 1.452 -4.917"
+                side="double"
+                scale="1.377 1 1"
+                src="Assets/Sticks.jpeg">
+            </a-box>
+            <!-- Right box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-0.149 1.452 -2.688"
+                side="double"
+                rotation="0 89.818 0"
+                src="Assets/Sticks.jpeg">
+            </a-box>
+            <!-- The Roof -->
+            <a-cylinder
+            
+            position="-2.614 5.022 -2.705"
+            segments-radial="3"
+            radius="3"
+            height="3"
+            depth="3"
+            scale="1.384 2.182 1.034"
+            rotation="-89.664 0 0"
+            src="Assets/Stick Roof.jpeg">
+            </a-cylinder>
+            <!-- The Window -->
+            <a-plane
+            position="-0.510 1.452 -.19"
+            rotation="0 0 0"
+            width="1"
+            height="1"
+            src="Assets/Window.jpeg"
+            side="double">
+            </a-plane>
+            <!-- The Window -->
+            <a-plane
+            position="0.16 1.452 -2.8"
+            rotation="0 90 0"
+            width="1"
+            height="1"
+            src="Assets/Window.jpeg"
+            side="double">
+            </a-plane>
+        </a-entity>
+        <!-- Back Right House -->
+        <a-entity 
+            position="12 0 -4">
+        
+            <!-- Top of Front Boz -->
+             <a-box
+                color="grey"
+                width="4"
+                height="2"
+                depth=".5"
+                position="-2.640 2.439 -0.450"
+                side="double"
+                rotation="0 0 0"
+                scale="1.374 1 1"
+                src="Assets/hay.jpeg">
+            </a-box>
+            <!-- Right of front box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="2"
+                depth=".5"
+                position="-1.094 1.452 -0.450"
+                side="double"
+                rotation="0 0 0"
+                scale="0.596 1.8 1"
+                src="Assets/hay.jpeg">
+            </a-box>
+            <!-- Left of front box -->
+            <a-box
+            color="grey"
+            width="4"
+            height="2"
+            depth=".5"
+            position="-4.539 1.374 -0.450"
+            side="double"
+            rotation="0 0 0"
+            scale="0.422 1.8 1"
+            src="Assets/hay.jpeg">
+        </a-box>
+            <!-- Left Box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-5.098 1.452 -2.708"
+                side="double"
+                rotation="0 89.818 0"
+                src="Assets/hay.jpeg">
+                
+            </a-box>
+            <!-- Back Box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-2.620 1.452 -4.917"
+                side="double"
+                scale="1.377 1 1"
+                src="Assets/hay.jpeg">
+            </a-box>
+            <!-- Right box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-0.149 1.452 -2.688"
+                side="double"
+                rotation="0 89.818 0"
+                src="Assets/hay.jpeg">
+            </a-box>
+            <!-- The Roof -->
+            <a-cylinder
+            
+            position="-2.614 5.022 -2.705"
+            segments-radial="3"
+            radius="3"
+            height="3"
+            depth="3"
+            scale="1.384 2.182 1.034"
+            rotation="-89.664 0 0"
+            src="Assets/Hay roof.jpeg">
+            </a-cylinder>
+            <!-- The Window -->
+            <a-plane
+            position="-0.510 1.452 -.19"
+            rotation="0 0 0"
+            width="1"
+            height="1"
+            src="Assets/Window.jpeg"
+            side="double">
+            </a-plane>
+            <!-- The Window -->
+            <a-plane
+            position="0.16 1.452 -2.8"
+            rotation="0 90 0"
+            width="1"
+            height="1"
+            src="Assets/Window.jpeg"
+            side="double">
+            </a-plane>
+        </a-entity>
+        <!-- Back Left House -->
+        <a-entity 
+            position="-4 0 -4">
+        
+            <!-- Top of Front Boz -->
+             <a-box
+                color="grey"
+                width="4"
+                height="2"
+                depth=".5"
+                position="-2.640 2.439 -0.450"
+                side="double"
+                rotation="0 0 0"
+                scale="1.374 1 1"
+                src="Assets/Brick.jpeg">
+            </a-box>
+            <!-- Right of front box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="2"
+                depth=".5"
+                position="-1.094 1.452 -0.450"
+                side="double"
+                rotation="0 0 0"
+                scale="0.596 1.8 1"
+                src="Assets/Brick.jpeg">
+            </a-box>
+            <!-- Left of front box -->
+            <a-box
+            color="grey"
+            width="4"
+            height="2"
+            depth=".5"
+            position="-4.539 1.374 -0.450"
+            side="double"
+            rotation="0 0 0"
+            scale="0.422 1.8 1"
+            src="Assets/Brick.jpeg">
+        </a-box>
+            <!-- Left Box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-5.098 1.452 -2.708"
+                side="double"
+                rotation="0 89.818 0"
+                src="Assets/Brick.jpeg">
+                
+            </a-box>
+            <!-- Back Box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-2.620 1.452 -4.917"
+                side="double"
+                scale="1.377 1 1"
+                src="Assets/Brick.jpeg">
+            </a-box>
+            <!-- Right box -->
+            <a-box
+                color="grey"
+                width="4"
+                height="4"
+                depth=".5"
+                position="-0.149 1.452 -2.688"
+                side="double"
+                rotation="0 89.818 0"
+                src="Assets/Brick.jpeg">
+            </a-box>
+            <!-- The Roof -->
+            <a-cylinder
+            
+            position="-2.614 5.022 -2.705"
+            segments-radial="3"
+            radius="3"
+            height="3"
+            depth="3"
+            scale="1.384 2.182 1.034"
+            rotation="-89.664 0 0"
+            src="Assets/Stone.jpeg">
+            </a-cylinder>
+            <!-- The Chimney -->
+            <a-cylinder
+            position="-2.614 5.022 -2.705"
+            segments-radial="4"
+            height="3"
+            depth="3"
+            scale="1 7 1"
+            rotation="0 0 0"
+            src="Assets/Stone.jpeg">
+        </a-cylinder>
+            <!-- The Window -->
+            <a-plane
+            position="-0.510 1.452 -.19"
+            rotation="0 0 0"
+            width="1"
+            height="1"
+            src="Assets/Window.jpeg"
+            side="double">
+            </a-plane>
+            <!-- The Window -->
+            <a-plane
+            position="0.16 1.452 -2.8"
+            rotation="0 90 0"
+            width="1"
+            height="1"
+            src="Assets/Window.jpeg"
+            side="double">
+            </a-plane>
+        </a-entity>
+    </a-entity>
+
+</body>
+</html>
